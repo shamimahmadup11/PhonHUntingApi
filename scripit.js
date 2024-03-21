@@ -2,6 +2,7 @@
 const btn = document.querySelector('.btn-3');
 const cards = document.querySelector('.cards');
 const inputData = document.getElementById('inputData');
+const card= document.querySelector('.card');
 let dataArray = []; 
 
 async function fetchData() {
@@ -29,7 +30,7 @@ function displayData(dataArray) {
         <div class="para">
             <p>${element.slug}</p>
         </div>
-        <button class="btn-4">SHOW DETAILS</button>`
+        <button class="btn-4" data-image="${element.image}" data-name="${element.phone_name}" data-slug="${element.slug}">SHOW DETAILS</button>`
         cards.appendChild(card);
     });
 }
@@ -44,9 +45,15 @@ btn.addEventListener('click', function () {
     });
     displayData(filteredData);
 });
-
-
-
+document.addEventListener('click', function (event) {
+    if (event.target.classList.contains('btn-4')) {
+        const image = event.target.getAttribute('data-image');
+        const name = event.target.getAttribute('data-name');
+        const slug = event.target.getAttribute('data-slug');
+        // Redirect to details.html with query parameters
+        window.location.href = `detail.html?image=${encodeURIComponent(image)}&name=${encodeURIComponent(name)}&slug=${encodeURIComponent(slug)}`;
+    }
+});
 
 
 

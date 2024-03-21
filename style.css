@@ -190,9 +190,9 @@ body{
   }
   .cards>.card>.img>img{
     height: 96%;
-    width: 96%;
+    width: 80%;
     border-radius: 10px;
-    margin: 5px;
+    margin-left: 30px;
   }
   .cards>.card>.heading{
     height: 10%;
@@ -235,6 +235,7 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-gap: 10px;
-cursor: pointer;
+    gap: 10px;
+    cursor: pointer;
  }
+ 
