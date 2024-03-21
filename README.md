@@ -4,7 +4,7 @@ Welcome to PhoneHunting API! This project is a simple web application that fetch
 
 ## Live Demo
 
-Check out the live demo [here](https://shamimahmadup11.github.io/PhonHUntingApi/).
+Check out the live demo [here]([https://shamimahmadup11.github.io/PhonHUntingApi/](https://phon-h-unting-api.vercel.app/)).
 
 ## Features
 
